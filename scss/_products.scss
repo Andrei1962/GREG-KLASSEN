@@ -1,0 +1,37 @@
+.products {
+  /*border: 6px solid #fa5c07;*/
+
+  @media screen and (max-width:1400px) {
+    padding: 72px 32px 0 32px;
+  }
+
+  @media screen and (max-width:952px) {
+    padding: 16px 32px 0 32px;
+  }  
+}
+  /*&__navigation {
+    display: flex;
+    text-decoration: none;
+    gap: 35px;
+
+    @media screen and (max-width: 952px) {
+      display: none;
+    }
+
+    .menu {
+      &__link_hovered {
+        color: #131212;
+        text-decoration: none;
+        line-height: 23px;
+        font-size: 20px;
+        font-weight: 500;
+        z-index: 2;
+  
+          
+        &:hover {
+          color: rgb(222, 30, 30);
+        }
+      }    
+    } 
+  }
+}*/
