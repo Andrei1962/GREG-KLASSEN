@@ -253,7 +253,7 @@
             letter-spacing: 0.1em;
             text-align: center;
             background-color: transparent;
-            padding: 13px 4px 13px 4px;
+            padding: 13px 24px 13px 24px;
             /*background: none;*/
 
             @media screen and (max-width: 992px) {
@@ -279,6 +279,7 @@
       flex-direction: column;
       /*border: 6px solid #730d0d;*/
       box-sizing: border-box;
+      width: 50%;
 
       @media screen and (max-width:992px) {
         flex-direction: row;
@@ -294,7 +295,7 @@
 
       &-title {
         margin-bottom: 24px;
-        font-size: clamp(24px, 5vw, 32px);
+        font-size: clamp(24px, 4vw, 32px);
         color: #FFFFFF;
         font-weight: 500;
         line-height: 37px;
