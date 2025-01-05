@@ -152,8 +152,10 @@ body {
 }
 @media screen and (max-width: 540px) {
   .main .section-one {
+    align-items: center;
     width: 100%;
     gap: 5px;
+    padding: 1px 12px 1px 12px;
   }
 }
 .main .section-one__logo {
@@ -203,6 +205,7 @@ body {
     width: 476px;
     height: 52px;
     margin-bottom: 32px;
+    margin-left: 30px;
   }
 }
 .main .section-one__about {
@@ -216,6 +219,11 @@ body {
   .main .section-one__about {
     /*padding: 24px 32px ;*/
     margin-bottom: 1px;
+  }
+}
+@media screen and (max-width: 540px) {
+  .main .section-one__about {
+    align-items: center;
   }
 }
 .main .section-one__about-title {
@@ -242,7 +250,6 @@ body {
     text-align: center;
     font-size: 24px;
     margin-bottom: 2px;
-    text-align: center;
   }
 }
 .main .section-one__about-text {
@@ -330,6 +337,8 @@ body {
   .main .section-one__products-title {
     margin-bottom: 12px;
     font-size: 24px;
+    align-items: center;
+    text-align: center;
   }
 }
 .main .section-one__products-navigation {
@@ -351,12 +360,15 @@ body {
 }
 @media screen and (max-width: 540px) {
   .main .section-one__products-navigation {
-    width: 360px;
+    width: 400px;
     margin-bottom: 32px;
-    gap: 5px;
+    gap: 12px;
+    justify-content: center;
   }
 }
 .main .section-one__products-navigation .menu {
+  display: flex;
+  justify-content: center;
   border: 3px solid #225f1e;
   font-family: ROBOTO;
   align-content: center;
@@ -409,6 +421,7 @@ body {
 @media screen and (max-width: 540px) {
   .main .section-one__forms {
     flex-direction: column;
+    flex-wrap: nowrap;
     align-items: center;
     gap: 12px;
   }
@@ -483,9 +496,13 @@ body {
 @media screen and (max-width: 540px) {
   .main .section-one__forms .form__item_int {
     font-size: 14px;
+    width: 88%;
+    padding-left: 12px;
+    margin-left: 20px;
   }
 }
 .main .section-one__forms .form__textarea {
+  position: relative;
   resize: none;
   width: 100%;
   height: 108px;
@@ -516,6 +533,7 @@ body {
 @media screen and (max-width: 540px) {
   .main .section-one__forms .form__textarea {
     font-size: 14px;
+    width: 92%;
   }
 }
 .main .section-one__forms .form__author {
@@ -554,7 +572,7 @@ body {
 @media screen and (max-width: 540px) {
   .main .section-one__forms .form__author_btn {
     background-color: transparent;
-    width: 313px;
+    width: 200px;
     height: 32px;
     margin-bottom: 32px;
     font-size: 16px;
@@ -616,6 +634,6 @@ body {
     height: 100%;
     align-items: center;
     justify-content: center;
-    margin: 32px 75px 0 75px;
+    margin: 2px 75px 0 75px;
   }
 }/*# sourceMappingURL=style.css.map */
