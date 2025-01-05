@@ -9,4 +9,10 @@
 body {
   font-family: Roboto Light;
   box-sizing: border-box;
+  overflow: hidden;
+  /*overflow-x: hidden;*/
+  @media screen and (max-width:992px) {
+    /*overflow: auto;*/
+    overflow-x: hidden;
+  }
 }
