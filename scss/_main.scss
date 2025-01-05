@@ -8,20 +8,15 @@
   box-sizing: border-box;
   background-image: url("../images/fon.png");
   background-repeat: no-repeat;
-  background-size: cover;
-  /*top: -12px;
-  left: -88px;  */
-  border: 6px solid #40fb32;
-  overflow-y: hidden;
-  overflow-x: hidden;
+  background-size: cover;  
+  overflow: hidden; /*убрал скрол*/
   gap: 5px;
+  /*border: 6px solid #40fb32;*/
 
   @media screen and (max-width: 992px) {
-    /*height: 724px;*/
-    /*width: 992px;*/
-    overflow-y: hidden;
-    overflow-x: hidden;
-    
+    height: 724px;
+    width: 992px;
+        
   }
 
   @media screen and (max-width: 540px) {
@@ -37,7 +32,7 @@
     position: relative;
     display: flex;
     flex-direction: column;
-    /*justify-content: space-between;*/
+    justify-content: space-between;
     align-items: flex-start;
     align-content: flex-end;/*поднял низ*/
     height: 100%;
@@ -45,6 +40,7 @@
     border: 6px solid #4d0ee1;
     padding: 65px 50px 64px 142px;
     gap: 62px;
+    overflow: auto;
 
     @media screen and (max-width: 992px) {
       /*padding-right: 32px;*/
@@ -249,7 +245,7 @@
 
         @media screen and (max-width: 540px) {
           width: 400px;
-          margin-bottom: 32px;
+          /*margin-bottom: 32px;*/
           gap: 12px; 
           justify-content: center;     
         } 
@@ -312,7 +308,9 @@
         flex-direction: column;
         flex-wrap: nowrap;
         align-items: center;
-        gap: 12px;      
+        gap: 12px; 
+        margin-left: 32px;
+        margin-right: 32px;     
       } 
 
       .form {
@@ -336,7 +334,9 @@
 
           @media screen and (max-width: 540px) {
             font-size: 24px;
-            text-align: center;      
+            text-align: center;
+            margin-left: 32px;   
+            margin-right: 32px;  
           } 
         }         
 
@@ -382,6 +382,7 @@
               width: 88%;
               padding-left: 12px;
               margin-left: 20px;
+              padding-bottom: 10px;
             } 
           }  
         }
@@ -409,13 +410,14 @@
             width: 70%;
             height: 60%;
             font-size: 14px;
-            margin-bottom: 1px;
+            /*margin-bottom: 1px;*/
             padding: 1px 3px;
           } 
 
           @media screen and (max-width: 540px) {
             font-size: 14px; 
-            width: 92%;     
+            width: 92%; 
+            padding: 18px 12px 18px 12px;    
           } 
         }
 
@@ -452,10 +454,12 @@
               
             @media screen and (max-width: 540px) {
               background-color: transparent;
-              width: 200px;
-              height: 32px;
-              margin-bottom: 32px;
+              width: 50%;
+              height: 20%;
+              /*margin-bottom: 32px;*/
               font-size: 16px;
+              padding: 14px 25px 14px 25px;
+              border: 2px solid #ffffff;
             } 
 
             &:hover {
@@ -478,6 +482,7 @@
     height: 70vh;      
     border: 6px solid #e60c51;
     padding: 178px 53px 3px 53px;
+    /*overflow: auto;*/
 
     @media screen and (max-width:992px) {
       padding-top: 50px;
@@ -489,7 +494,9 @@
 
     @media screen and (max-width: 540px) {
       height: 100%;
-      width: 100%;      
+      width: 100%; 
+      padding: 0 30px;     
+      margin-left: 160px;
     }
 
     &__foto-man {
@@ -505,18 +512,20 @@
       border: 6px solid #15d215;    
 
       @media screen and (max-width:952px) {
-        background-image: url(../images/man2.png);
+        /*background-image: url(../images/man2.png);*/
         height: 80%;
         padding: 1px 7px 2px 7px;
         /*margin: 1px 3px 1px 3px;*/
       }
 
       @media screen and (max-width: 540px) {
-        background-image: url(../images/man2.png); 
+        position: relative;
+        /*background-image: url(../images/man2.png); */
+        background-size: 60%;
         height: 100%;
-        align-items: center;
-        justify-content: center;
-        margin: 2px 75px 0 75px;      
+        /*align-items: center;
+        justify-content: center;*/
+        /*margin: 0 75px 0 75px;  */    
       }     
     }    
   }
