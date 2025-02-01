@@ -1,0 +1,82 @@
+.main {
+  background-color: #ececea;
+  padding-top: 19px;
+
+  @media screen and (max-width: 952px) {
+    padding-top: 96px;
+    height: 525px;
+  }
+
+  &__wrapper {
+    position: relative;
+    height: 100%;
+    
+    @media screen and (max-width: 952px) {
+      padding-right: 32px;
+    }  
+  }
+
+  &__man {
+    position: absolute;
+    z-index: 1;
+    bottom: 0;
+    left: -220px;
+
+    @media screen and (max-width: 952px) {
+      width: 624px;
+      left: -40px;
+    }  
+  }    
+
+  &__title {
+    position: relative;
+    font-family: Arial Bold;
+    font-weight: 900;
+    font-size: clamp(100px, 10vw, 160px);
+    line-height: 160px;
+    color: #CFCFCD;
+    padding-left: 22%;
+    letter-spacing: 8px; 
+    
+    @media screen and (max-width: 952px) {
+      line-height: 100px;
+      padding-left: 13%;
+    }  
+  }
+
+  &__text {
+    position: relative;
+    max-width: 587px;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 23px;
+    color: #000;
+    margin-left: auto;
+    z-index: 2;
+    top: -85px;
+    padding-bottom: 130px;
+    letter-spacing: 2px;
+
+    @media screen and (max-width: 952px) {
+      max-width: 363px;
+      top: -195px;
+      padding-top: 0;
+      line-height: 24px;
+    }  
+  }
+
+  &__link_hovered {
+    display: block;
+    text-decoration: none;
+    width: 200px;
+    padding: 11px 32px;
+    color: #292929;
+    font-size: 20px;
+    font-weight: 500;
+    letter-spacing: 2px;
+
+    &:hover {
+      color: rgb(249, 0, 0);
+    }
+  }  
+}

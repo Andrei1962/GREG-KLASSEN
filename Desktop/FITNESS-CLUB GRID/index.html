@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="zxx">
+                                                                   
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+  <title>ДЗ 1.2.9 Анимация</title>
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="./css/style.css">
+  
+</head>
+                                                                   
+<body>
+                                                                   
+  <header class="header">
+    <div class="container header__wrapper">
+      <img class="header__logo" src="./images/logo.svg" alt="">
+      <nav class="header__navigation menu">
+        <a href="" class="menu__link_hovers">О НАС</a>
+        <a href="" class="menu__link_hovers">ТРЕНЕРЫ</a>
+        <a href="" class="menu__link_hovers">АБОНЕМЕНТЫ</a>
+        <a href="" class="menu__link_hovers">КОНТАКТЫ</a>
+      </nav>
+      <div class="header__burger">
+        <div class="header__burger-line"></div>
+      </div>
+    </div>
+  </header>
+                                                                     
+  <main class="main">
+    <div class="container main__wrapper">
+      <img class="main__man" src="./images/man.png" alt="">
+      <h1 class="main__title">ПОСТРОЙ СВОЕ ТЕЛО</h1>
+      <div class="main__text">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aТРЕliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        <a href="" class="main__link_hovered">ЧИТАТЬ ДАЛЕЕ</a>
+      </div>
+    </div>
+  </main>
+                                                                 
+  <section class="section-one">
+    <div class="container section-one__wrapper">
+      <h2 class="section-one__title">ТВОЕ ТЕЛО -<br>
+      ПРОИЗВЕДЕНИЕ ИСКУССТВА</h2>
+      <div class="section-one__border">
+        <p class="section-one__text">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+          <a href="" class="section-one__link">ЧИТАТЬ ДАЛЕЕ</a>
+        </p>
+      </div>
+      <img src="./images/woman.png" alt="" class="section-one__woman" >
+    </div>
+  </section>
+                                                                     
+  <section class="section-two">
+    <div class="container section-two__wrapper">
+      <h2 class="section-two__title">ВЕРНОЕ НАПРАВЛЕНИЕ</h2>
+      <p class="section-two__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    </div>
+  </section>
+                                                                 
+  <section class="system">
+    <div class="system__main">
+      <h2 class="system__main-title">СИСТЕМА</h2>
+      <p class="system__main-description">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+      </p>
+    </div>
+    
+    <div class="system__item">
+      <img src="./images/carrot.svg" alt="" class="system__item-icon">
+      <h3 class="system__item-title">ПИТАНИЕ</h3>
+      <p class="system__item-description">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+      </p>
+    </div>
+
+    <div class="system__item">
+      <img src="./images/watch.svg" alt="" class="system__item-icon">
+      <h3 class="system__item-title">РЕЖИМ</h3>
+      <p class="system__item-description">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+      </p>
+    </div>
+
+    <div class="system__item">
+      <img src="./images/kettlebell.svg" alt="" class="system__item-icon">
+      <h3 class="system__item-title">ПРОГРАММА</h3>
+      <p class="system__item-description">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+      </p>
+    </div>
+
+    <div class="system__preview">
+      <img src="./images/barbell.png" alt="" class="system__preview_still">
+    </div> 
+  </section>
+                                             <!--swiper-container-->
+  <div class="swiper-container">
+    <h2 class="swiper-container__title">
+      ТРЕНЕРСКИЙ СОСТАВ
+    </h2>  
+                      <!--swiper-wrapper -->
+    <div class="swiper-wrapper">
+                        <!-- слайды -->
+      <div class="swiper-slide">
+        <img class="swiper-slide__item-photo" src="./images/djeks.png" alt="картинка">
+        <h3 class="swiper-slide__item-name">
+          ДЖЕСС
+          ПАРКЕР
+        </h3>
+        <h4 class="swiper-slide__item-description">
+          Персональный тренер
+        </h4> 
+      </div>
+
+      <div class="swiper-slide">
+        <img class="swiper-slide__item-photo" src="./images/sara.png" alt="картинка">
+        <h3 class="swiper-slide__item-name">
+          САРА
+          КОННОР
+        </h3>
+        <h4 class="swiper-slide__item-description">
+          Персональный тренер
+        </h4> 
+      </div>
+
+      <div class="swiper-slide">
+        <img class="swiper-slide__item-photo" src="./images/orlando.png" alt="картинка">
+        <h3 class="swiper-slide__item-name">
+          ОРЛАНДО
+          БЛУМ
+        </h3>
+        <h4 class="swiper-slide__item-description">
+          Персональный тренер
+        </h4> 
+      </div> 
+        
+      <div class="swiper-slide">
+        <img class="swiper-slide__item-photo" src="./images/sara.png" alt="картинка">
+        <h3 class="swiper-slide__item-name">
+          САРА
+          КОННОР
+        </h3>
+        <h4 class="swiper-slide__item-description">
+          Персональный тренер
+        </h4> 
+      </div>
+
+      <div class="swiper-slide">
+        <img class="swiper-slide__item-photo" src="./images/boldyin.png" alt="картинка">
+        <h3 class="swiper-slide__item-name">
+          АЛЕК
+          БОЛДУИН
+        </h3>
+        <h4 class="swiper-slide__item-description">
+          Персональный тренер
+        </h4> 
+      </div>
+
+      <div class="swiper-slide">
+        <img class="swiper-slide__item-photo" src="./images/djeks.png" alt="картинка">
+        <h3 class="swiper-slide__item-name">
+          ДЖЕСС
+          ПАРКЕР
+        </h3>
+        <h4 class="swiper-slide__item-description">
+          Персональный тренер
+        </h4> 
+      </div>        
+
+      <div class="swiper-slide">
+        <img class="swiper-slide__item-photo" src="./images/terminator.png" alt="картинка">
+        <h3 class="swipe-slide__item-name">
+          ТЕРМИ
+          НАТОР 
+        </h3>
+        <h4 class="swiper-slide__item-description">
+          Персональный тренер
+        </h4> 
+      </div>  <!-- слайды конец-->
+
+    </div>   <!--swiper-wrapper конец-->
+
+    <!-- кнопки пагинации -->
+    <!--<div class="swiper-pagination"></div>-->
+    <!-- кнопки для навигации -->
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div>
+
+  </div>  
+                         <!--swiper-container конец -->
+  
+  <section class="ticket">
+    <div class="container ticket__wrapper">
+      <h2 class="ticket__title">АБОНЕМЕНТ</h2>
+      <div class="ticket__season-ticket"></div>
+    </div>
+  </section>
+                                                           
+  <section class="map">
+    <div class="container map__wrapper">
+      <h2 class="nap__title">ДОБРО ПОЖАЛОВАТЬ!</h2>
+      <div class="map__season-ticket"></div>
+    </div>
+  </section>
+                                                           
+  <footer class="footer">
+    <nav class="footer__navigation menu">
+      <button class="menu__btn">О НАС</button>
+      <button class="menu__btn">ТРЕНЕРЫ</button>
+      <button class="menu__btn">АБОНЕМЕНТЫ</button>
+      <button class="menu__btn">КОНТАКТЫ</button>      
+    </nav>
+    <div class="footer__author">blvckdesign</div>
+    <div class="footer__date">2023</div>
+  </footer>
+                                                             
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <script src="script.js"></script>
+  
+</body>
+</html>

@@ -1,0 +1,89 @@
+.system {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: auto auto;
+  grid-template-areas: "main main main preview preview preview" 
+                       "itemNutrition itemMode itemProgramm preview preview preview";
+
+  @media screen and (max-width:1200px) {
+    grid-template-rows: repeat(3, auto);
+    grid-template-areas: "main main main preview preview preview" 
+                         "itemNutrition itemNutrition itemNutrition itemMode itemMode itemMode"
+                         "itemProgramm itemProgramm itemProgramm itemProgramm itemProgramm itemProgramm";    
+  }
+
+  &__main {
+    grid-area: main;
+    padding: 124px 76px 41px 32px;
+    margin-left: auto;
+    max-width: 624px;
+
+    @media screen and (max-width:1200px) {
+      padding: 40px 32px 32px 32px;
+    }
+
+    &-title {
+      margin-bottom: 34px;
+      font-size: clamp(60px, 5vw, 80px);
+      font-family: 'Arial';
+    }
+
+    &-description {
+      font-size: 20px;
+      font-weight: 500;
+      line-height: 24px;
+    }
+  }
+
+  &__item {
+    padding: 38px 44px 18px 24px;
+    text-align: center;
+    background-color: #fbfbfb;
+
+    @media screen and (max-width:1200px) {
+      padding: 38px 34px 58px 38px;
+    }
+
+    &:nth-child(2) {
+      grid-area: itemNutrition;
+    }
+
+    &:nth-child(3) {
+      grid-area: itemMode;
+    }
+
+    &:nth-child(4) {
+      grid-area: itemProgramm;
+    }
+
+    &-icon {
+      margin-bottom: 70px;
+    }
+
+    &-title {
+      margin-bottom: 52px;
+      font-family: 'Arial';
+      font-size: 20px;
+      font-weight: 900;
+    }
+
+    &-description {
+      font-size: 20px;
+      font-weight: 500;
+      line-height: 24px;
+    }
+  }
+
+  &__preview {
+    grid-area: preview;
+    background: url("./images/barbell.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    @media screen and (max-width:1200px) {
+      width: 50%;
+      height: 50%;
+    }
+
+  }
+}
