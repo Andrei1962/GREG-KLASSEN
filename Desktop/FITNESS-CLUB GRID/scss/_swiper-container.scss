@@ -49,19 +49,23 @@
   }
 }
 .swiper-button-next {
+  position: relative;
   top: -350px;
-  left: -50px;
+  right: -50px;
   margin: 0 34px 0 auto;
   color: #ff8340;
   font-size: 80px;
+  height: 100%;
 }
 
 .swiper-button-prev {
+  height: 100%;
   top: -350px;
   left: -50px;
   margin: 0 auto 0 34px;
   color: #ff8340;
-  font-size: 80px;    
+  font-size: 80px; 
+  
 } 
 
 .swiper-button-prev {
@@ -79,7 +83,7 @@
   position: relative;
   margin: 0 34px 0 auto;
   height: 100%;
-  top: -550px;
+  top: -500px;
   bottom: 0;
   right: -50px;
   width: 260px;

@@ -504,14 +504,17 @@ body {
 }
 
 .swiper-button-next {
+  position: relative;
   top: -350px;
-  left: -50px;
+  right: -50px;
   margin: 0 34px 0 auto;
   color: #ff8340;
   font-size: 80px;
+  height: 100%;
 }
 
 .swiper-button-prev {
+  height: 100%;
   top: -350px;
   left: -50px;
   margin: 0 auto 0 34px;
@@ -534,7 +537,7 @@ body {
   position: relative;
   margin: 0 34px 0 auto;
   height: 100%;
-  top: -550px;
+  top: -500px;
   bottom: 0;
   right: -50px;
   width: 260px;
@@ -560,10 +563,25 @@ body {
 
 .map {
   width: 100%;
-  height: 100px;
+  height: 100%;
   margin-top: 10px;
   margin-bottom: 15px;
   padding: 15px 10px;
+}
+.map__title {
+  font-family: Arial;
+  font-size: clamp(60px, 5vw, 80px);
+  /*font-size: 80px;*/
+  font-weight: 900;
+  line-height: 90px;
+  text-align: left;
+  text-underline-position: from-font;
+  -webkit-text-decoration-skip-ink: none;
+          text-decoration-skip-ink: none;
+  margin-bottom: 46px;
+}
+.map__season-ticket {
+  margin-bottom: 46px;
 }
 
 .footer {
@@ -572,6 +590,7 @@ body {
   position: relative;
   display: flex;
   flex-direction: column;
+  margin-bottom: 12px;
 }
 .footer__navigation {
   display: flex;
